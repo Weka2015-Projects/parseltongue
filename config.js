@@ -17,6 +17,7 @@ System.config({
     "babel": "npm:babel-core@5.8.34",
     "babel-runtime": "npm:babel-runtime@5.8.34",
     "core-js": "npm:core-js@1.2.6",
+    "jsx": "npm:jspm-loader-jsx@0.0.7",
     "react": "npm:react@0.14.6",
     "react-dom": "npm:react-dom@0.14.6",
     "github:jspm/nodelibs-assert@0.1.0": {
@@ -67,6 +68,10 @@ System.config({
       "isarray": "npm:isarray@1.0.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
+    "npm:camel-case@1.2.2": {
+      "sentence-case": "npm:sentence-case@1.1.3",
+      "upper-case": "npm:upper-case@1.1.3"
+    },
     "npm:core-js@1.2.6": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "path": "github:jspm/nodelibs-path@0.1.0",
@@ -99,6 +104,12 @@ System.config({
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
+    "npm:jspm-loader-jsx@0.0.7": {
+      "pascal-case": "npm:pascal-case@1.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "react": "npm:react@0.13.3",
+      "react-hot-api": "github:gaearon/react-hot-api@0.4.5"
+    },
     "npm:jstransform@10.1.0": {
       "base62": "npm:base62@0.1.1",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -113,6 +124,10 @@ System.config({
       "stream": "github:jspm/nodelibs-stream@0.1.0",
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
+    "npm:pascal-case@1.1.2": {
+      "camel-case": "npm:camel-case@1.2.2",
+      "upper-case-first": "npm:upper-case-first@1.1.2"
+    },
     "npm:path-browserify@0.0.0": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
@@ -125,6 +140,11 @@ System.config({
     },
     "npm:react-dom@0.14.6": {
       "react": "npm:react@0.14.6"
+    },
+    "npm:react@0.13.3": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "envify": "npm:envify@3.4.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:react@0.14.6": {
       "envify": "npm:envify@3.4.0",
@@ -140,6 +160,9 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "stream-browserify": "npm:stream-browserify@1.0.0",
       "string_decoder": "npm:string_decoder@0.10.31"
+    },
+    "npm:sentence-case@1.1.3": {
+      "lower-case": "npm:lower-case@1.1.3"
     },
     "npm:source-map@0.1.31": {
       "amdefine": "npm:amdefine@1.0.0",
@@ -161,6 +184,9 @@ System.config({
     },
     "npm:ua-parser-js@0.7.10": {
       "systemjs-json": "github:systemjs/plugin-json@0.1.0"
+    },
+    "npm:upper-case-first@1.1.2": {
+      "upper-case": "npm:upper-case@1.1.3"
     },
     "npm:util@0.10.3": {
       "inherits": "npm:inherits@2.0.1",

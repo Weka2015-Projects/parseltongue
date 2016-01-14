@@ -1,3 +1,6 @@
 import React from 'react'
-import ReaactDOM from 'react-dom'
-import Cell from './cell.jsx!'
+import ReactDOM from 'react-dom'
+
+import Grid from './components/grid.jsx!'
+
+ReactDOM.render(<Grid />, document.getElementById('container'))
