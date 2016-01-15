@@ -1,19 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+
+}
+
 #container {
   width: 750px;
   margin: 50px auto;
   display: block;
+
 }
 
 .grid{
+  background: white;
   width:750px;
   height: 750px;
   border: 1px solid black;
+  /*opacity: .7;*/
 }
 
 .cell {
   display:inline-block;
   float:left;
-  border: 1px solid grey;
+  border: 1px solid #F5F5F5;
   height: 23px;
   width: 23px;
 }
@@ -21,10 +30,22 @@
 .snake {
   height: 100%;
   width: 100%;
-  background: red;
+    background: darkgreen;
+
 }
 
 .food {
   height: 100%;
   width: 100%;
-  background: green;}
+  background: red;
+}
+
+.score {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 25px;
+  display:inline-block;
+  position:relative;
+  left: 320px;
+  font-family: 'Open Sans';
+}

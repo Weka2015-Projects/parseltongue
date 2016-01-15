@@ -104,12 +104,21 @@ class Grid extends Component {
   }
   render(){
     let grid = []
+
     this.state.cells.map(x => x.map(y => {
       if (this.state.snakePos.row === y.row && this.state.snakePos.col === y.col) {
         grid.push(<Cell row={y.row} col={y.col} property="snake"/>)
       } else if (this.state.foodPos.row === y.row && this.state.foodPos.col === y.col) {
         grid.push(<Cell row={y.row} col={y.col} property="food"/>)
+      } else if (R.filter((h) => {
+        return h.row === y.row && h.col === y.col
+      }, this.state.snakeHistory).length > 0){
+        console.log(R.filter((h) => {
+          return h.row === y.row && h.col === y.col
+        }, this.state.snakeHistory))
+          grid.push(<Cell row={y.row} col={y.col} property="snake"/>)
       } else {
+
         grid.push(<Cell row={y.row} col={y.col} property="empty"/>)
 
       }
@@ -117,6 +126,7 @@ class Grid extends Component {
     return (
       <div className="grid" onKeyUp={this.moveSnake}>
         {grid}
+        <div className="score">Score: {this.state.snakeLength}</div>
       </div>
     )
   }
