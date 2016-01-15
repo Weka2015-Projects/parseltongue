@@ -18,6 +18,7 @@ System.config({
     "babel-runtime": "npm:babel-runtime@5.8.34",
     "core-js": "npm:core-js@1.2.6",
     "jsx": "npm:jspm-loader-jsx@0.0.7",
+    "ramda": "npm:ramda@0.19.1",
     "react": "npm:react@0.14.6",
     "react-dom": "npm:react-dom@0.14.6",
     "github:jspm/nodelibs-assert@0.1.0": {
@@ -137,6 +138,9 @@ System.config({
     "npm:promise@7.1.1": {
       "asap": "npm:asap@2.0.3",
       "fs": "github:jspm/nodelibs-fs@0.1.2"
+    },
+    "npm:ramda@0.19.1": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:react-dom@0.14.6": {
       "react": "npm:react@0.14.6"

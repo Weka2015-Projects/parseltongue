@@ -24,6 +24,7 @@
   "jspm": {
     "dependencies": {
       "jsx": "npm:jspm-loader-jsx@^0.0.7",
+      "ramda": "npm:ramda@^0.19.1",
       "react": "npm:react@^0.14.6",
       "react-dom": "npm:react-dom@^0.14.6"
     },
