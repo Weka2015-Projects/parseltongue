@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 
-class Snake extends Component {
+
+class Food extends Component {
   constructor () {
     super()
     this.state = {
@@ -9,9 +10,9 @@ class Snake extends Component {
   }
   render () {
     return (
-      <div className="snake"></div>
+      <div className="food"></div>
     )
   }
 }
 
-export default Snake
+export default Food
