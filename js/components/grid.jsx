@@ -14,8 +14,8 @@ class Grid extends Component {
         })
       ),
       snakePos: { row: 0, col: 1},
-      snakeLength: 3,
-      snakeHistory: [],
+      snakeLength: 1,
+      snakeHistory: [{ row: 0, col: 0}],
       foodPos: { row: 0, col: 3}
     }
   }
@@ -51,13 +51,9 @@ class Grid extends Component {
 
   }
   updateHistory() {
-    let blah
-    let hist = this.state.snakeHistory
-    if (this.state.snakeHistory > this.state.snakeLength) {
-
-      blah = R.remove(0, 1, hist).push(this.state.snakePos)
-    } else {
-      blah = R.remove(0, 0, hist).push(this.state.snakePos)
+    let blah = this.state.snakeHistory.concat(this.state.snakePos).slice()
+    if(blah.length > this.state.snakeLength) {
+      blah.splice(0, 1)
     }
     console.log(blah)
     this.setState({
